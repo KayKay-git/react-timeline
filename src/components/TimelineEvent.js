@@ -13,7 +13,7 @@ const TimelineEvent = (props) => {
         {props.status} 
       </p>
       <p className="event-time"> 
-        {props.timeStamp} 
+        <Timestamp time = {props.timeStamp}/>
       </p>
     </div>
   );

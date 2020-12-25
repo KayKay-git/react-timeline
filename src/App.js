@@ -12,20 +12,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Ada Lovelace's social media feed</h1>
+        <h1 className="App-title">{timelineData.person}'s social media feed</h1>
       </header>
       <main className="App-main">
-      {/* Testing the component */}
-      <TimelineEvent
-          person = {timelineData.events[0].person}
-          status = {timelineData.events[0].status}
-          timeStamp = {timelineData.events[0].timeStamp}
-        />
+        <Timeline events = {timelineData.events}/>
       </main>
     </div>
   );
 }
 
 export default App;
-
-// 
